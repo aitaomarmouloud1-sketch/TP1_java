@@ -1,0 +1,27 @@
+package partie3;
+import java.util.Arrays;
+import java.util.Scanner;
+public class Exercice8 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int[][]M=new int[3][3];
+		for(int i=0;i<3;i++) {
+			for(int j=0;j<3;j++) {
+				System.out.println("saisi element M["+(i+1)+"]["+(j+1)+"]");
+				M[i][j]=sc.nextInt();
+				
+			}
+		}
+		System.out.println("les elements d'un matrice est:");
+		for(int i=0;i<3;i++) {
+			System.out.print("(");
+			for(int j=0;j<3;j++) {
+				System.out.print(M[i][j]+" ");
+			}
+			System.out.println(")");
+		}
+		sc.close();
+	}
+
+}
