@@ -1,0 +1,19 @@
+package partie1;
+import java.util.Scanner;
+public class Exercice1 {
+	public static void main(String[] args) {
+		Scanner SC=new Scanner(System.in);
+		System.out.println("aisi un nb:");
+		int a=SC.nextInt();
+		if (a>0) {
+			System.out.println("Positif");
+		}
+		else if(a==0) {
+			System.out.println("nul");
+		}
+		else {
+			System.out.println("Nigatif");
+		}
+		SC.close();
+	}
+}
