@@ -1,0 +1,14 @@
+package partie1;
+import java.util.Scanner;
+public class Exercice3 {
+	public static void main(String[] args) {
+		Scanner SC=new Scanner(System.in);
+		System.out.println("saisi un nb :");
+		int n=SC.nextInt();
+		for(int i=0;i<=10;i++) {
+			System.out.println(n+"X"+i+"="+i*n);
+		}
+		SC.close();
+	}
+
+}
