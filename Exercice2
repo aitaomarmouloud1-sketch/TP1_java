@@ -1,0 +1,31 @@
+package partie1;
+import java.util.Scanner;
+public class Exercice2 {
+	public static void main(String[] args) {
+		Scanner SC=new Scanner(System.in);
+		System.out.println("saisi premier nb :");
+		int a=SC.nextInt();
+		System.out.println("saisi deuxieme nb :");
+		int b=SC.nextInt();
+		System.out.println("saisi troisieme nb :");
+		int c=SC.nextInt();
+		if(a>b) {
+			if(a>c) {
+				System.out.println("plus grand nb "+a);
+			}
+			else {
+				System.out.println("plus grand nb "+c);
+				
+			}
+		}
+		else {
+			if(b>c) {
+				System.out.println("plus grand nb "+b);
+			}
+			else {
+				System.out.println("plus grand nb "+c);
+			}
+		}
+		SC.close();
+	}
+}
