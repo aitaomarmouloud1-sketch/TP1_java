@@ -1,0 +1,25 @@
+package partie4;
+
+import java.util.Scanner;
+
+public class Exercice14 {
+
+	public static void main(String[] args) {
+		Scanner sc =new Scanner(System.in);
+		System.out.print("saisi une chaine de caractéres....:");
+		String s=sc.nextLine();
+		String inverse="";
+		for(int i=s.length()-1;i>=0;i--) {
+			inverse=inverse+s.charAt(i);
+		}
+		if (inverse.equalsIgnoreCase(s)) {
+			System.out.println("la chaine est un palindrome");
+		}
+		else {
+			System.out.println(s+" est une chaine n'est pas  palindrome");
+			
+		}
+		sc.close();
+	}
+
+}
